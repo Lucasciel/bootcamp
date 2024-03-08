@@ -1,51 +1,149 @@
+/*importação de fonte*/
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
 
-
+/*menu principal*/
 body {
     margin: 0%;
     padding: 0%;
     font-family: 'inter';
 }
 
-#menu-principal {
-    background-color: hsl(0, 0%, 19%);
-    width: 100%;
-    height: 100px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    #menu-principal {
+        background-color: hsl(0, 0%, 19%);
+        width: 100%;
+        height: 100px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 1px solid #BABABA ;
     
+        }
+
+        #menu-links {
+            width: 55%;
+            display: flex;
+            justify-content: space-around;
+            padding-left: 5%;
+        }
+
+        #menu-principal button {
+            margin-right: 5%;
+            background-color:#0C70F2 ;
+            height: 39px;
+            width: 80px;
+            border: none;
+            color: #FFFFFF;
+            font-weight: 600;
+            font-size: 20px;
+            box-shadow: 3px 2px 4px #0b70f440;
+            cursor: pointer;
+
+        }
+
+        #menu-principal div a {
+            color:#FFFFFF ;
+            font-size: 20px;
+            font-weight: 600;
+            letter-spacing: 0em;
+            text-align: left;
+            text-decoration: none;
+
+        }
+            #menu-principal div a:hover {
+                color: #cccccc;
+                
+        }
+
+/*seção principal do site*/
+
+section {
+    background-color: #303030;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
 }
 
-#menu-links {
-    width: 55%;
+header {
+    margin-top: 4%;
+    margin-bottom: 100px;
+}
+
+header h1 {
+    margin-bottom: 20px;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 80px;
+    font-weight: 800;
+}
+
+header h2 {
+    color: #FFFFFF ;
+    font-size: 35px;
+    text-align: center;
+}
+
+header h2 span {
+    background-color: black;
+}
+
+/*Formulario*/
+
+form {
+    color: white;
+    font-size: 30px ;
+    font-weight: 600;
+    width: 50%;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+form input {
+    border-radius: 10px;
+    height: 20px;
+    border: none;
+    padding: 15px;
+    margin-top: 10px;
+    background-color: #FFFFFFE5 ;
+}
+
+form input::placeholder {
+    color: #39393980;
+}
+
+#checkbox-itens {
     display: flex;
     justify-content: space-around;
-    padding-left: 5%;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
-#menu-principal button {
-    margin-right: 5%;
-    background-color:#0C70F2 ;
-    height: 39px;
-    width: 80px;
-    border: none;
+#checkbox-itens label {
+    font-size: 25px;
+
+
+}
+
+#checkbox-itens input {
+    transform: scale(2.0);
+}
+
+input[type="submit"] {
+    background-color: #0C70F2E5;
+    width: 100%;
+    height: 56px;
+    box-shadow: 0px 6px 4px 0px #0C70F240;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    cursor: pointer;
     color: #FFFFFF;
-    font-weight: 600;
-    font-size: 20px;
-    box-shadow: 3px 2px 4px #0b70f440;
+    font-size: 32px;
 
-}
-
-#menu-principal div a {
-    color:#FFFFFF ;
-    font-size: 20px;
-    font-weight: 600;
-    letter-spacing: 0em;
-    text-align: left;
-    text-decoration: none;
-
-}
-    #menu-principal div a:hover {
-        color: #cccccc;
 }
