@@ -188,7 +188,6 @@ footer ul{
 
 footer ul li {
     text-align: center;
-;
     margin-top: 20px;
     font-size: 20px;
 }
@@ -228,4 +227,53 @@ footer #linha2 a:hover {
 
 footer #linha2 a:first-child {
     border-right: 3px white solid;
+}
+
+@media only screen and (max-width: 600px) {
+    #menu-principal {
+        flex-direction:column;
+        height: auto;
+        align-items: center;
+
+    }
+    #menu-links {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        padding: 0%;
+    }
+    #menu-links a {
+        height: 40px;
+    }
+    #menu-principal button {
+        margin: 0%;
+        width: 100%;
+    }
+
+    section h1 {
+        font-size: 20px;
+    }
+    section h2 {
+        font-size: 16px;
+    }
+
+    form {
+        width: 95%;
+        font-size: 24px;
+    }
+
+    #checkbox-itens label {
+        font-size: 15px;
+    }
+
+    footer #linha1 {
+        flex-direction: column;
+    }
+
+    footer {
+        height: auto;
+    }
+    footer #endereco {
+        font-size: 18px;
+    }
 }
